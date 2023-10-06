@@ -1,14 +1,11 @@
-/* eslint-disable react/prop-types */
-// import React from 'react'
-
-function Starship({ ship }) {
+export default function Starship({ ship }) {
   return (
-    <div>
-      <section className="starshipCard" key={ship.name}>
-        <h2>{ship.name}</h2>
-      </section>
-    </div>
+    <section className="starshipCard" key={ship.name}>
+      <h2>{ship.name}</h2>
+      <h3>Model:</h3>
+      <p>{ship.model}</p>
+      <h3>Cargo Capacity:</h3>
+      <p>{ship.cargo_capacity}</p>
+    </section>
   );
 }
-
-export default Starship;
