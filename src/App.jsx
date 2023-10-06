@@ -20,6 +20,8 @@ export default function App() {
   }, []);
 
   return (
-    <Starships ships={starships}/>
-  )
+    <main>
+      <Starships ships={starships} />
+    </main>
+  );
 }
